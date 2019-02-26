@@ -11,5 +11,25 @@
 
 # However if you say 'I LOVE YOU GRANDMA!', she should respond with
 # 'I LOVE YOU TOO PUMPKIN!'
-def speak_to_grandma
-  if 
+BYE = 0
+
+    while BYE < 3
+
+        puts "What do you want to say to Grandma?"
+        tell_grandma = gets.chomp
+
+        if tell_grandma == "BYE"
+            BYE += 1
+        end
+
+        if tell_grandma != tell_grandma.upcase
+            puts "HUH!? SPEAK UP, SONNY!"
+        else
+            puts "NO, NOT SINCE #{1929 + rand(22)}!"
+        end  
+    end 
+
+    while BYE = 3
+        puts "BYE BYE, SONNY!"
+        break
+    end
