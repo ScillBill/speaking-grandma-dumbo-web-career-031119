@@ -11,25 +11,25 @@
 
 # However if you say 'I LOVE YOU GRANDMA!', she should respond with
 # 'I LOVE YOU TOO PUMPKIN!'
-BYE = 0
 
-    while BYE < 3
+def speak_to_grandma(phrase)
 
-        puts "What do you want to say to Grandma?"
-        tell_grandma = gets.chomp
+    if phrase = "I LOVE YOU GRANDMA!"
+      return "I LOVE YOU TOO PUMPKIN!"
 
-        if tell_grandma == "BYE"
-            BYE += 1
-        end
+    elsif phrase == phrase.downcase
+  		return "HUH?! SPEAK UP, SONNY!"
+  		
+    elsif phrase == phrase.downcase
+      return "HUH?! SPEAK UP, SONNY!"
+      
+    elsif phrase == phrase.upcase
+      return "NO, NOT SINCE 1938!"
 
-        if tell_grandma != tell_grandma.upcase
-            puts "HUH!? SPEAK UP, SONNY!"
-        else
-            puts "NO, NOT SINCE #{1929 + rand(22)}!"
-        end  
-    end 
-
-    while BYE = 3
-        puts "BYE BYE, SONNY!"
-        break
+    else
+  		return "NO, NOT SINCE 1938!"
     end
+
+end
+
+speak_to_grandma("HELLO THERE")
