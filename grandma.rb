@@ -19,7 +19,6 @@ def speak_to_grandma(phrase)
 
     elsif phrase == phrase.downcase
   		return "HUH?! SPEAK UP, SONNY!"
-  		
       
     elsif phrase == phrase.upcase
       return "NO, NOT SINCE 1938!"
@@ -30,4 +29,4 @@ def speak_to_grandma(phrase)
 
 end
 
-speak_to_grandma("HELLO THERE")
+speak_to_grandma("I LOVE YOU GRANDMA!")
